@@ -34,7 +34,7 @@ Overall, the command line is extremely powerful, even without using it as a soft
 
 ## Version Control (Git/ GitHub)
 #### TL;DR - Version control is a way of tracking changes to your code so that you can re-visit working versions of your code, should you run into major issues. Git and GitHub are two (of many) tools that allow developers to do this.
-Prior to the bootcamp, I had not used git very much, but after using it quite a bit on the course, it now just seems like the logical thing to do with any coding project, no matter the size. Git allows developers to (among other things):
+Prior to the bootcamp, I had not used git very much. After using it quite a bit on the course, it now just seems like the logical thing to do with any coding project, no matter the size. Git allows developers to (among other things):
 * Track changes made to source code
 * Store versions of code in a "repository" or "**repo**" for short
 * Re-visit past versions of source code to check how things *were* working if they run into issues further down the line
