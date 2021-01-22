@@ -55,3 +55,6 @@ I had some decent practice working with git and GitHub whilst following the tuto
 
 ## Ruby Mastery Learning and Mastery Quizzes
 #### TL;DR - I revisited some topics and learned some new programming concepts through the mastery exercises.
+Throughout the mastery curriculum, I covered the following topics, some of which I was already a little familiar with:
+* **IRB** - Stands for '**I**nteractive **R**u**b**y Shell'
+    * Test some ruby concepts right there in the irb without having to open your editor
