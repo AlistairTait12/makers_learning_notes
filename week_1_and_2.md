@@ -54,4 +54,4 @@ Commonly used with Git is a tool called **GitHub**. GitHub is a website where de
 I had some decent practice working with git and GitHub whilst following the tutorial, but the workflow process became more obvious in the... **mastery quizzes**!
 
 ## Ruby Mastery Learning and Mastery Quizzes
-#### TL;DR - 
+#### TL;DR - I revisited some topics and learned some new programming concepts through the mastery exercises.
