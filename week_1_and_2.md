@@ -30,3 +30,6 @@ Learning about the command line was fun. I had messed around with it previously 
 * And many more!
   
 Overall, the command line is extremely powerful, even without using it as a software developer, but it will be used even more for tasks such as source control and running code. One (of many) gotchas I learned was that to rmdir doesn't just move your file/folder to a recycle bin like a normal file explorer, **it erases it completely**, so be sure to use that command with care...
+
+## Version Control (Git/ GitHub)
+#### TL;DR - Version control is a way of tracking changes to your code so that you can re-visit working versions of your code, should you run into major issues. Git and GitHub are two (of many) tools that allow you to do this.
