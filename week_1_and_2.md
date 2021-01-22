@@ -37,4 +37,15 @@ Prior to the bootcamp, I had not used git very much, but after using it quite a 
 * Track changes made to source code
 * Store versions of code in a "repository" or "**repo**" for short
 * Re-visit past versions of source code to check how things *were* working if they run into issues further down the line
-* Collaborate with other devs on the same local network by each being on a "branch" and then joining those branches together to get a finished product
+* Collaborate with other devs on the same local network by each being on a "branch" and then joining those branches together to get a finished product  
+
+I learned the basic commands while going through this section of the module, which were:
+* `git init` - initializes and empty git 'repo' within whichever directory you run the command. Changes to your files are kept there.
+* `git add filename` - tells git to add all changes made to this file to the 'staging area'
+* `git commit -m "your commit message here"` - tells git to 'commit' these changes to the repo. The same as saying, "I want these changes to be recorded at this particular point in time"
+* `git status` - provides a report on which files have been changed and whether those new changes must be added to the staging area prior to commit
+  
+Commonly used with Git is a tool called GitHub. GitHub is a website where devs can keep store their work 'remotely'. A bit like a Google Drive, but for developers! GitHub is useful because:
+* It allows developers to collaborate with others on projects even though they may not be located near each other.
+* Keeps a copy of your precious code remotely, so that if you were to lose hardware storing the code, you would have a backup copy that you could then '`git clone`' to another machine.
+* Acts as a sort of 'portfolio' for your code, so that other people interested in your projects can view what you have been doing.
