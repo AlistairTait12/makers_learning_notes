@@ -126,3 +126,6 @@ my_hash = {
     titles: ["Lord of Winterfell", "Warden of the North"]
 }
 ```
+
+## 5. Problem Solving, Peek at TDD and Wellbeing
+#### TL;DR - Some other highlights of the week were learning some effective problem solving methods, having a peek at Test Driven Development and learning about the importance of my emotional wellbeing as a software engineer
