@@ -117,13 +117,14 @@ puts :some_symbol
 puts "some string"
 puts "some string"
 
-# the speed difference is imperceptible on small applications but would have some great benefit on applications at a larger scale
+# the speed difference is imperceptible on small applications but would benefit applications
+# at a larger scale
 ```
 * Hashes too can be constructed with the `Hash.new` or can be constructed with a hash literal, like so:
 ```ruby
 my_hash = {
     first_name: "Ned",
     last_name: "Stark",
-    occupations: ["Lord of Winterfell", "Warden of the North"]
+    titles: ["Lord of Winterfell", "Warden of the North"]
 }
 ```
