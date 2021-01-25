@@ -90,3 +90,10 @@ Throughout the mastery curriculum, I covered the following topics, some of which
         * `.join()` - join the strings within this array to form one string joined together with the delimiter that is passed as an argument
         * `.include?()` - return me `true` or `false` to let me know if the array contains the value that I passed as an argument
     * And many others
+* **Control Flows**
+    * Choosing which blocks of code to execute based on the evaluation of various conditional statements
+    * `if`/`else` - run the `if` block of code if a certain condition is `true`, `else` (optional) run this next block of code (or do nothing)
+    * `elsif` - if the first condition is `false`, evaluate this condition and run if `true`
+    * `unless` - skip this block of code `unless` a condition is `true`
+    * `while` loops - keep repeating the code in this loop `while` a certain condition is `true`
+    * `for` loops - for every case in a certain range of examples, perform this block of code. I.e. ```ruby for i in (0..10) {puts i}```
