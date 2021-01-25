@@ -56,5 +56,13 @@ I had some decent practice working with git and GitHub whilst following the tuto
 ## Ruby Mastery Learning and Mastery Quizzes
 #### TL;DR - I revisited some topics and learned some new programming concepts through the mastery exercises.
 Throughout the mastery curriculum, I covered the following topics, some of which I was already a little familiar with:
-* **IRB** - Stands for '**I**nteractive **R**u**b**y Shell'
+* **IRB** - Stands for '**I**nteractive **R**u**b**y (Shell)'
     * Test some ruby concepts right there in the irb without having to open your editor
+    * it is a REPL (**R**ead **E**val **P**rint **L**oop)
+* **Strings**
+    * An object which holds text
+    * you can create a string with a string literal, i.e.
+        * `my_text = "hello world!"` (single quotes work to but limit things like string interpolation)
+    * Or with the new keyword on the `String` class:
+        * `my_text = String.new("hello world!)`
+* **Variables** - they hold values and can be declared or updated using the assignment operator '`=`'
