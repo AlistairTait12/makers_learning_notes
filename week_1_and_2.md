@@ -96,4 +96,7 @@ Throughout the mastery curriculum, I covered the following topics, some of which
     * `elsif` - if the first condition is `false`, evaluate this condition and run if `true`
     * `unless` - skip this block of code `unless` a condition is `true`
     * `while` loops - keep repeating the code in this loop `while` a certain condition is `true`
-    * `for` loops - for every case in a certain range of examples, perform this block of code. I.e. ```ruby for i in (0..10) {puts i}```
+    * `for` loops - for every case in a certain range of examples, perform this block of code. I.e. 
+    ```ruby 
+    for i in (0..10) {puts i}
+    ```
