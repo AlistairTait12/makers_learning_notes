@@ -5,9 +5,7 @@
 ### 2. Using the Command Line Interface/ Mac OS Terminal
 ### 3. Version Control/ Git and GitHub
 ### 4. Ruby Mastery Learning, Quizzes
-### 5. Problem Solving
-### 6. Peek at TDD
-### 7. Wellbeing
+### 5. Problem Solving, Peek at TDD and Wellbeing
 
 ## Setup and configuration
 #### TL;DR - setup various tools within my coding environment
