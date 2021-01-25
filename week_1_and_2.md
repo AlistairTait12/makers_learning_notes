@@ -100,3 +100,30 @@ Throughout the mastery curriculum, I covered the following topics, some of which
     ```ruby 
     for i in (0..10) {puts i}
     ```
+* **Hashes**
+* Hashes are like arrays in that they hold many different types of object
+* An advantage is that you can use **almost anything** as an index for your hash
+    * Most commonly integers, strings and **symbols**
+* They are organised as key-value pairs like - `worst_king_ever = {first_name: "Joffrey", last_name: "Baratheon", home_town: "Kings Landing"}`
+* You would access a value in the hash by using the 'key' (like you would use an index with arrays), i.e. `puts worst_king_ever[first_name]`
+* Symbols (written like `:some_symbol`) are string-like objects that are immutable and are often used as keys in hashes
+* Their immutability makes them very memory efficient as symbols that share the same value are actually the very same object so they share the same memory space. I.e.
+```ruby
+# the puts method here would access the same object
+puts :some_symbol
+puts :some_symbol
+
+# the puts method here is outputting two different objects
+puts "some string"
+puts "some string"
+
+# the speed difference is imperceptible on small applications but would have some great benefit on applications at a larger scale
+```
+* Hashes too can be constructed with the `Hash.new` or can be constructed with a hash literal, like so:
+```ruby
+my_hash = {
+    first_name: "Ned",
+    last_name: "Stark",
+    occupations: ["Lord of Winterfell", "Warden of the North"]
+}
+```
