@@ -79,4 +79,14 @@ Throughout the mastery curriculum, I covered the following topics, some of which
     ```
     * It can also apply to loops etc
 * **Arrays**
-    * Arrays are a type of object which serves as a collection of other objects
+    * Arrays are a type of object which serve as a collection of other objects
+    * You access an array with its index like so: `my_array[9]`
+    * They are zero-indexed which means that `my_array[0]` would be the element that appeared first in the `my_array`
+    * An array can have **any** mixture of objects, i.e. `[1, true, my_object, "hi there!"]`
+    * Arrays can even hold other arrays, these are called multi-dimensional arrays, so to get an element from an array within an array, you can use `some_array[1][3]` for example
+    * Like strings, they can be declared with an array literal or `Array.new` (which you can pass a block as an argument and it will construct the array as directed)
+    * There are many useful methods available to the `Array` class such as:
+        * `.each` - iterate through each element in the array and execute some code which uses each element in turn
+        * `.join()` - join the strings within this array to form one string joined together with the delimiter that is passed as an argument
+        * `.include?()` - return me `true` or `false` to let me know if the array contains the value that I passed as an argument
+    * And many others
