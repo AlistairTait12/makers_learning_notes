@@ -66,3 +66,17 @@ Throughout the mastery curriculum, I covered the following topics, some of which
     * Or with the new keyword on the `String` class:
         * `my_text = String.new("hello world!)`
 * **Variables** - they hold values and can be declared or updated using the assignment operator '`=`'
+* **Methods**
+    * `def`ine a block of code for later use within the program simply by calling that method name along with appropriate **arguments**
+    * In line with the DRY (**D**on't **R**epeat **Y**ourself) principle as you can use it many times
+* **Booleans** (`true` or `false`)
+    * Everything in Ruby is considered '**truthy**' (even negative integers), EXCEPT the values of `false` and `nil` (which are **falsy**)
+    * You can use these in logical operations to determine which blocks of code to run, i.e.
+    ```ruby
+    if my_boolean == true
+      # Do this bit of code please
+    end
+    ```
+    * It can also apply to loops etc
+* **Arrays**
+    * Arrays are a type of object which serves as a collection of other objects
