@@ -25,5 +25,5 @@ TDD may seem tedious at first, but the more I have gotten into the habit of doin
 5. You can let the errors guide you closer to working code
   
 ## A cycle for TDD
-## RED - GREEN - REFACTOR
+**RED - GREEN - REFACTOR**
 A good process for 
