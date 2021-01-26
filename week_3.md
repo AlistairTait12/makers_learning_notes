@@ -26,4 +26,5 @@ TDD may seem tedious at first, but the more I have gotten into the habit of doin
   
 ## A cycle for TDD
 > **RED - GREEN - REFACTOR**  
-A good process for 
+  
+A good process for testing is the above cycle. Red - Green - Refactor is a process whereby you are constantly rotating your mindset between writing a test that you know will fail, adding code to your application so that you will pass the test, and then refactoring your code while it is still 'green' and then moving on to writing the next failing test.
