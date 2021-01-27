@@ -31,3 +31,5 @@ Let the demands inspire the tests, let the tests inspire the code
 Customer > `deposit` > account (customer receives acknowledgement of deposit) account object state changes  
 Customer > `withdraw` > account (customer receives money from account) account object state changes  
 Customer > `view_bal` > account > (customer notified on their balance)  
+  
+I will begin writing the **tests**!
