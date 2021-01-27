@@ -3,10 +3,12 @@ class BankAccount
     @balance = starting_funds
   end
   def deposit(amount)
+    @balance += amount
     "You deposited £#{amount} into your account"
   end
 
   def withdraw(amount)
+    @balance -= amount
     "You withdrew £#{amount}"
   end
 
