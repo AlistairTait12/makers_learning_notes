@@ -6,11 +6,11 @@ This was from an exercise in week 3 of the bootcamp. A student wanted an IRB app
 > I want an IRB **application** that _stores_ the **names** of people I meet  
   
 *Imagine* how to use it  
-|Object     |Message(s) |
-|-----------|-----------|
-|Student    |           |
-|Name       |store_name |
-|Application|list_names |
+|Object     |Message(s)   |
+|-----------|-------------|
+|Student    |             |
+|Name       |`store_name` |
+|Application|`list_names` |
   
 Feature 1: Storing names to the app  
 **student**--`store_name`-->**app**
