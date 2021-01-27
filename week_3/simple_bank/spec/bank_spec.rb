@@ -1,8 +1,9 @@
 require 'bank'
 describe BankAccount do
   describe '#deposit' do
-    it 'can receive money into an instance of the BankAccount class'
-
+    it 'can notify the user that the funds have been deposited' do
+      my_account = BankAccount.new
+      expect(my_account.deposit(100)).to eq "You deposited £10 into your account"
     end
   end
 end
