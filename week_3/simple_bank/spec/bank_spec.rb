@@ -29,7 +29,17 @@ describe BankAccount do
       expect(my_account.withdraw(101)).to eq "You do not have enough in your account!"
     end
 
-    it 'warns the customer'
+    it 'warns the customer that there are insufficient funds with starting bal of 0' do
+      my_account = BankAccount.new
+      expect(my_account.withdraw(90)).to eq "You do not have enough in your account!"
+    end
 
+  end
+
+  describe '#view_bal' do
+    it 'lets the user view their balance, no matter the balance' do
+      my_account = BankAccount.new(100)
+      expect(my_account.view_bal).to eq "Your current balance is £100"
+    end
   end
 end

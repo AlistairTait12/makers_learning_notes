@@ -50,3 +50,6 @@ describe SomeClass do
   end
 end
 ```
+
+* Ask Eddie why RSpec does not like arguments passed to initialize method when creating an instance of a class (as in Bike.new(true))
+* Ask Eddie whether there should be a method that allows user to report bike as faulty
