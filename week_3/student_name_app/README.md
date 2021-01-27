@@ -1,9 +1,9 @@
 # Names Storage application
 This was from an exercise in week 3 of the bootcamp. A student wanted an IRB application so that they could store the names of people so they could be remembered
   
-> As a **student**
-> So that I can _remember_ **people's names**
-> I want an IRB **application** that _stores_ the **names** of people I meet
+> As a **student**  
+> So that I can _remember_ **people's names**  
+> I want an IRB **application** that _stores_ the **names** of people I meet  
   
 *Imagine* how to use it  
 |Object     |Message(s) |
