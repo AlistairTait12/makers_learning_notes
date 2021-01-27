@@ -1,2 +1,2 @@
-def store_name
+def store_name(name)
 end
