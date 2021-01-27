@@ -15,4 +15,11 @@ describe "the list_names method" do
     store_name("Florence")
     expect(list_names).to eq ["Florence"]
   end
+
+  it "can list several names after the store_name method is used to store them" do
+    store_name("Brad")
+    store_name("Zac")
+    store_name("Chris")
+    expect(list_names).to eq ["Brad", "Zac", "Chris"]
+  end
 end

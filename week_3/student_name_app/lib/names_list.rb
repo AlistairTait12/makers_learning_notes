@@ -1,5 +1,5 @@
 def store_name(name)
-  "Jeremy stored in list"
+  "#{name} stored in list"
 end
 
 def list_names
