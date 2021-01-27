@@ -19,3 +19,15 @@ Let the demands inspire the tests, let the tests inspire the code
 3. Write the tests and be guided by the error messages for writing your code
 4. Make small changes, ensuring the error messages change and/or the tests still pass at each stage
 5. Repeat the cycle with increasing complexity to the tests as you progress towards fulfilling the user requirements
+
+|  Objects  |  Messages                        |
+|-----------|----------------------------------|
+|customer   |                                  |
+|money      |                                  |
+|account    | `deposit`, `withdraw`, `view_bal`|
+
+`money` and `customer` objects may be represented in more complex application. Today, I will be focussing on the `account` object.
+
+Customer > `deposit` > account (customer receives acknowledgement of deposit) account object state changes  
+Customer > `withdraw` > account (customer receives money from account) account object state changes  
+Customer > `view_bal` > account > (customer notified on their balance)  
