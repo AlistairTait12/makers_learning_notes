@@ -13,7 +13,7 @@ describe BankAccount do
 
   describe '#withdraw' do
     it 'can notify the user on how much they have withdrawn' do
-      my_account = BankAccount.new
+      my_account = BankAccount.new(20)
       expect(my_account.withdraw(20)).to eq "You withdrew £20"
     end
 
@@ -25,7 +25,11 @@ describe BankAccount do
     end
 
     it 'warns the customer that they hace insufficient funds to make the withdrawal' do
+      my_account = BankAccount.new(100)
+      expect(my_account.withdraw(101)).to eq "You do not have enough in your account!"
     end
+
+    it 'warns the customer'
 
   end
 end

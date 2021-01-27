@@ -1,5 +1,5 @@
 class BankAccount
-  def initialize(starting_funds=0)
+  def initialize(starting_funds = 0)
     @balance = starting_funds
   end
   def deposit(amount)
@@ -8,8 +8,12 @@ class BankAccount
   end
 
   def withdraw(amount)
-    @balance -= amount
-    "You withdrew £#{amount}"
+    if amount > @balance
+      "You do not have enough in your account!"
+    else
+      @balance -= amount
+      "You withdrew £#{amount}"
+    end
   end
 
   def view_bal
