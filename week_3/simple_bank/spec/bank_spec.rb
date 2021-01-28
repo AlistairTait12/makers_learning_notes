@@ -24,7 +24,7 @@ describe BankAccount do
       expect(my_account.view_bal).to eq "Your current balance is £5"
     end
 
-    it 'warns the customer that they hace insufficient funds to make the withdrawal' do
+    it 'warns the customer that they have insufficient funds to make the withdrawal' do
       my_account = BankAccount.new(100)
       expect(my_account.withdraw(101)).to eq "You do not have enough in your account!"
     end
@@ -41,5 +41,11 @@ describe BankAccount do
       my_account = BankAccount.new(100)
       expect(my_account.view_bal).to eq "Your current balance is £100"
     end
+
+    it 'can show any random balance' do
+      start_bal = rand(100)
+      my_account = BankAccount.new(start_bal)
+      expect(my_account.view_bal).to eq "Your current balance is £#{start_bal}"
+    end    
   end
 end
