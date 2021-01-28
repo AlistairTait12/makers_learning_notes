@@ -7,6 +7,7 @@
 - [ ] Follow an effective debugging process
 ## Other topics learned this week 
 - [ ] (User Stories etc)
+- [ ] Peek at OOP
 
 ## Test-drive a simple program using objects and methods
 |Header         |General                     |
@@ -51,5 +52,6 @@ describe SomeClass do
 end
 ```
 
-* Ask Eddie why RSpec does not like arguments passed to initialize method when creating an instance of a class (as in Bike.new(true))
-* Ask Eddie whether there should be a method that allows user to report bike as faulty
+## Pair using the driver-navigator style
+### Pair Programming advantages
+## Follow an effective debugging process
