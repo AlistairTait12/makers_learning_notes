@@ -54,4 +54,8 @@ end
 
 ## Pair using the driver-navigator style
 ### Pair Programming advantages
+* Two minds greater than one
+* Bugs, typos and the like spotted earlier
+* Learn from and improve eachothers' mental models
+* Agreement on ideas can lead to faster progress
 ## Follow an effective debugging process
