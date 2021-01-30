@@ -2,8 +2,8 @@
 ## Learning Outcomes:
 (According to the makers apprentice repo)
 - [ ] Gather evidence and use reflection to choose goals and track their progress
-- [ ] Test-drive a simple program using objects and methods
-- [ ] Pair using the driver-navigator style
+- [x] Test-drive a simple program using objects and methods
+- [x] Pair using the driver-navigator style
 - [ ] Follow an effective debugging process
 ## Other topics learned this week 
 - [ ] (User Stories etc)
@@ -62,3 +62,13 @@ end
   
 This week I have had some great pairing sessions. I have learned that pair programming is an effective way to tackle a project. There are several different styles of pair programming. The one I focussed on this week is the **Driver/ Navigator** style which is a process whereby one developer takes the keyboard and writes the code (_driver_) and the other instructs on what to write and does the thinking (_navigator_). There are other styles which I will no doubt come across during my experience as a software engineer. Another style is the tour guide/ tourist style. This style is where one (sometimes more senior) dev takes the lead and explains to the other dev things such as what the code is doing (explaining the codebase, the framework or the language) and the other dev learns whatever is being explained to them. This style is particularly useful in situations where a newcomer has started at a new organisation, or is still learning how to code and they can be guided by a more experienced dev.
 ## Follow an effective debugging process
+Another large part of this week has been being able to debug code. This is the process of turning code that does not work into code that does work. I.e. getting rid of bugs (_bugs are elements of your code that prevent it from working. They could be as simple as a typo or a syntax error_). Some great ways of dealing with bugs are:
+* Reading the error messages and finding out things such as:
+    * Which line of the code does the bug originate from?
+    * What _type_ of error is being thrown? I.e.
+        * **TypeError** - where you are trying to perform some operation on a data type that the operation is not compatible with
+        * **NoMethodError** - the method that you are trying to call does not exist for this object
+        * **ArgumentError** - the method expects a certain number of arguments but you have passed too few or too many
+        * There are more types of error than this
+* Outputting messages to the console to try and identify at which stage of the code is the bug occurring?
+* Sometimes there are no errors thrown but the code still does not do as you expect. This is where unit and feature testing comes in especially useful. You can explicitly state what you expect and the testing framework will raise an error, whereas simply running the code as normal would not.
