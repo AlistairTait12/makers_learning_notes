@@ -1,7 +1,7 @@
 # Week 3
 ## Learning Outcomes:
 (According to the makers apprentice repo)
-- [ ] Gather evidence and use reflection to choose goals and track their progress
+- [x] Gather evidence and use reflection to choose goals and track their progress
 - [x] Test-drive a simple program using objects and methods
 - [x] Pair using the driver-navigator style
 - [x] Follow an effective debugging process
