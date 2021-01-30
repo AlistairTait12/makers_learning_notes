@@ -4,7 +4,7 @@
 - [ ] Gather evidence and use reflection to choose goals and track their progress
 - [x] Test-drive a simple program using objects and methods
 - [x] Pair using the driver-navigator style
-- [ ] Follow an effective debugging process
+- [x] Follow an effective debugging process
 ## Other topics learned this week 
 - [ ] (User Stories etc)
 - [ ] Boris Bikes and Airport Challenge
@@ -72,3 +72,23 @@ Another large part of this week has been being able to debug code. This is the p
         * There are more types of error than this
 * Outputting messages to the console to try and identify at which stage of the code is the bug occurring?
 * Sometimes there are no errors thrown but the code still does not do as you expect. This is where unit and feature testing comes in especially useful. You can explicitly state what you expect and the testing framework will raise an error, whereas simply running the code as normal would not.
+
+## User Stories
+Over the course of this week, I have become more familiar with **user stories**. I was slightly aware of them before but this week I have really understood their value in producing code that does exactly as is expected of it.  
+User stories are an excellent way of getting to the bottom of what the customer would like. A simple user story can follow this basic format:  
+> As a (_type of user_)  
+> So that I can (_do something_)  
+> I would like (_this feature_)  
+  
+An example could be:
+> As an **account** holder  
+> So that I can meet my **savings goals**  
+> I would like to be able to _set a_ **savings target** _each month_  
+  
+User stories are usually analysed and dissected to extract keywords which will help the dev team work out exactly how to design and implement the feature that the customer would like. In the above example, I have emboldened useful nouns and italicized useful verbs. Quite often, nouns can be a good indicator of which **objects** to design and verbs can be a good indicator of which _messages_ should be passed between them. A good way of representing this can be in a table, like so:  
+|Objects      | Messages            |
+|-------------|---------------------|
+|account      |`set_target`         |
+|saving target|`notify_on_progress` |  
+  
+This is a very simple representation. Most of the time, several user stories are grouped together to create a collection of features which enhance the user's experience. User stories are also a great way of 'putting yourself inside the head of a user'. Devs can often not just simply choose what features to implement, but also think about how they will be used, and how their design choices will affect the user experience.
