@@ -98,7 +98,7 @@ This is a very simple representation. Most of the time, several user stories are
 ### Boris Bikes Challenge
 * More experience in pair programming
 * More experience in designing classes and their methods
-* More experience in TDD
+* More experience in TDD  
 In the Boris Bikes challenge, we (myself and various fellow Makers) studied some user stories, followed a walkthrough and designed a system that would represent the Santander Cycles programme in London. The main focus of the challenge was to get better at pair programming, whilst also practicing our TDD and OOP skills. Some of the most rewarding parts of this for me were getting to know some of the other cohort members better and learning some fantastic things from them. One challenge I came across was when trying to implement a new feature which the walkthrough did not explicitly state how to write in the code. We then later found out that the way we implemented it was not as the walkthough had intended. Perhaps I should have spent more time considering how to write code that can easily be changed further down the line.
 ### Airport Challenge
 * Working individually
