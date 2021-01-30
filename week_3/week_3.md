@@ -6,7 +6,7 @@
 - [x] Pair using the driver-navigator style
 - [x] Follow an effective debugging process
 ## Other topics learned this week 
-- [ ] (User Stories etc)
+- [x] (User Stories etc)
 - [ ] Boris Bikes and Airport Challenge
 - [ ] Peek at OOP
 
@@ -91,4 +91,11 @@ User stories are usually analysed and dissected to extract keywords which will h
 |account      |`set_target`         |
 |saving target|`notify_on_progress` |  
   
-This is a very simple representation. Most of the time, several user stories are grouped together to create a collection of features which enhance the user's experience. User stories are also a great way of 'putting yourself inside the head of a user'. Devs can often not just simply choose what features to implement, but also think about how they will be used, and how their design choices will affect the user experience.
+This is a very simple representation. Most of the time, several user stories are grouped together to create a collection of features which enhance the user's experience. User stories are also a great way of 'putting yourself inside the head of a user'. Devs can often not just simply choose what features to implement, but also think about how they will be used, and how their design choices will affect the user experience.  
+
+## Boris Bikes and Airport Challenges
+(**And what I learned from them**)
+### Boris Bikes Challenge
+* More experience in pair programming
+* More experience in designing classes and their methods
+* More experience in TDD
