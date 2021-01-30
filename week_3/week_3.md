@@ -7,6 +7,7 @@
 - [ ] Follow an effective debugging process
 ## Other topics learned this week 
 - [ ] (User Stories etc)
+- [ ] Boris Bikes and Airport Challenge
 - [ ] Peek at OOP
 
 ## Test-drive a simple program using objects and methods
@@ -58,4 +59,6 @@ end
 * Bugs, typos and the like spotted earlier
 * Learn from and improve eachothers' mental models
 * Agreement on ideas can lead to faster progress
+  
+This week I have had some great pairing sessions. I have learned that pair programming is an effective way to tackle a project. There are several different styles of pair programming. The one I focussed on this week is the **Driver/ Navigator** style which is 
 ## Follow an effective debugging process
