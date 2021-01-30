@@ -7,8 +7,8 @@
 - [x] Follow an effective debugging process
 ## Other topics learned this week 
 - [x] (User Stories etc)
-- [ ] Boris Bikes and Airport Challenge
-- [ ] Peek at OOP
+- [x] Boris Bikes and Airport Challenge
+- [x] Peek at OOP
 
 ## Test-drive a simple program using objects and methods
 |Header         |General                     |
@@ -57,7 +57,7 @@ end
 ### Pair Programming advantages
 * Two minds greater than one
 * Bugs, typos and the like spotted earlier
-* Learn from and improve eachothers' mental models
+* Learn from and improve each others' mental models
 * Agreement on ideas can lead to faster progress
   
 This week I have had some great pairing sessions. I have learned that pair programming is an effective way to tackle a project. There are several different styles of pair programming. The one I focussed on this week is the **Driver/ Navigator** style which is a process whereby one developer takes the keyboard and writes the code (_driver_) and the other instructs on what to write and does the thinking (_navigator_). There are other styles which I will no doubt come across during my experience as a software engineer. Another style is the tour guide/ tourist style. This style is where one (sometimes more senior) dev takes the lead and explains to the other dev things such as what the code is doing (explaining the codebase, the framework or the language) and the other dev learns whatever is being explained to them. This style is particularly useful in situations where a newcomer has started at a new organisation, or is still learning how to code and they can be guided by a more experienced dev.
@@ -99,3 +99,21 @@ This is a very simple representation. Most of the time, several user stories are
 * More experience in pair programming
 * More experience in designing classes and their methods
 * More experience in TDD
+In the Boris Bikes challenge, we (myself and various fellow Makers) studied some user stories, followed a walkthrough and designed a system that would represent the Santander Cycles programme in London. The main focus of the challenge was to get better at pair programming, whilst also practicing our TDD and OOP skills. Some of the most rewarding parts of this for me were getting to know some of the other cohort members better and learning some fantastic things from them. One challenge I came across was when trying to implement a new feature which the walkthrough did not explicitly state how to write in the code. We then later found out that the way we implemented it was not as the walkthough had intended. Perhaps I should have spent more time considering how to write code that can easily be changed further down the line.
+### Airport Challenge
+* Working individually
+* Working **exclusively** from user stories and without outside guidance
+* Designing classes and deciding which messages to pass between them
+* Designing rigorous unit tests
+In the Airport end of module challenge, the task was to design an airport traffic management system from scratch in a short space of time (a few hours). I got some great practice in analysing user stories and in designing some rigorous unit tests to test each feature of the program. The 'client' wanted a airport control management system which:
+* Allowed them to `land` and `take_off` planes
+* Deny clearance for landing when airport was full
+* Deny clearance for landing **and** takeoff when the weather was bad
+* Create instances of `Airport` which could have custom plane capacities
+  
+Some challenges I ran into were:
+**Writing tests which accounted for random chance in a method**  
+The system I chose for setting the weather relied on a random chance between 0 and 1 to set the weather to either 'sunny' (ok to land and takeoff) and 'stormy' (planes unable to land or takeoff). When writing in the tests, I had to use a double and stub to ensure that the weather was always as desired for that test case. This became more problematic as the project became more complex. I did not cater for this feature early enough when writing the tests and had to spend a considerable amount of time rewriting my tests to include the stub so that they continued to pass after writing the new features. Perhaps I should spend more time planning for how new features will later affect the functionality of my code.  
+  
+**Choosing between global method or Class for Weather system**  
+Part of the program depended on the weather conditions to allow for landing and takeoff. I was at a crossroads deciding whether to implement this feature as a global method or a class. Had I chosen a global method, the conditions would have been easier to control. However, I decided to use a `Weather` class which was more in keeping with the OOP theme of the challenge. The difficulty I found was being able to pass messages between the `Weather` objects and the `Airport` objects. I was unsure of how dependent I should allow my classes to be upon each other. In the end, I had to rely on the `Airport` class method `stormy?` having access to the `Weather` class's method `report` and pass that in as an argument. I have a feeling I will find out more about class visibility in later modules.
