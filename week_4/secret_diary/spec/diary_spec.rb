@@ -5,12 +5,6 @@ describe SecretDiary do
     it 'unlocks a locked diary' do
       expect(subject.unlock).to eq 'Diary unlocked'
     end
-
-    it 'allows entries to be added and accessed in an `unlocked` state' do
-      diary = SecretDiary.new
-      diary.unlock
-      expect(diary.add_entry("entry 1", "blah blah blah")).to eq "Entry added"
-    end
   end
   
   describe '#lock' do
@@ -24,10 +18,20 @@ describe SecretDiary do
   end
 
   describe '#add_entry' do
-
+    it 'allows entries to be added in an `unlocked` state' do
+      diary = SecretDiary.new
+      diary.unlock
+      expect(diary.add_entry("entry 1", "blah blah blah")).to eq "Entry added"
+    end
   end
 
   describe '#get_entries' do
-
+    it 'allows user to view all the entries they have added so far' do
+      diary = SecretDiary.new
+      diary.unlock
+      diary.add_entry("Yet another entry", "Coded today...")
+      diary.add_entry("Some other entry", "made diary class")
+      expect(diary.get_entries).to eq [{"Yet another entry" => "Coded today..."}, {"Some other entry" => "made diary class"}]
+    end
   end
 end

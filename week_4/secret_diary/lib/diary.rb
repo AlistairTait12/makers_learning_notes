@@ -1,6 +1,7 @@
 class SecretDiary
   def initialize
     @locked = true
+    @entries = []
   end
 
   def unlock
@@ -15,7 +16,14 @@ class SecretDiary
 
   def add_entry(title, body)
     fail "You can't write to a locked diary" if locked?
+    @entries.push({title => body})
     'Entry added'
+  end
+
+  def get_entries
+    @entries.each do |entry| 
+      entry
+    end
   end
 
   private
