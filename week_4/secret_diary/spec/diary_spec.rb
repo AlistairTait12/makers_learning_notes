@@ -15,6 +15,10 @@ describe SecretDiary do
     it 'diaries are initialized as locked by default' do
       expect { subject.add_entry("entry1", "blah blah blah") }.to raise_error "You can't write to a locked diary"
     end
+
+    it 'access denied also applies to get_entries when locked' do
+      expect { subject.get_entries }.to raise_error "You can't read a locked diary"
+    end
   end
 
   describe '#add_entry' do
@@ -31,7 +35,7 @@ describe SecretDiary do
       diary.unlock
       diary.add_entry("Yet another entry", "Coded today...")
       diary.add_entry("Some other entry", "made diary class")
-      expect(diary.get_entries).to eq [{"Yet another entry" => "Coded today..."}, {"Some other entry" => "made diary class"}]
+      expect(diary.get_entries).to eq ["Yet another entry: Coded today...", "Some other entry: made diary class"]
     end
   end
 end

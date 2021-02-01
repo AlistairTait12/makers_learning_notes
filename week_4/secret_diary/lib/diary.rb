@@ -14,16 +14,15 @@ class SecretDiary
     'Diary locked'
   end
 
-  def add_entry(title, body)
+  def add_entry(header, body)
     fail "You can't write to a locked diary" if locked?
-    @entries.push({title => body})
+    @entries.push(Entry.new(header, body))
     'Entry added'
   end
 
   def get_entries
-    @entries.each do |entry| 
-      entry
-    end
+    fail "You can't read a locked diary" if locked?
+    @entries.map { |entry| "#{entry.header}: #{entry.body}" }
   end
 
   private
@@ -31,4 +30,12 @@ class SecretDiary
     @locked
   end
 
+end
+
+class Entry
+  attr_reader :header, :body
+  def initialize(header, body)
+    @header = header
+    @body = body
+  end
 end
