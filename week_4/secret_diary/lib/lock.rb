@@ -1,0 +1,3 @@
+class DiaryLock
+
+end
