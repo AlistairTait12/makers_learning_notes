@@ -1,17 +1,8 @@
 class SecretDiary
-  def initialize
-    @locked = DiaryLock.new
+  attr_reader :lock_type
+  def initialize(lock_type = DiaryLock.new)
+    @lock_type = lock_type
     @entries = []
-  end
-
-  def unlock
-    @locked = false
-    'Diary unlocked'
-  end
-
-  def lock
-    @locked = true
-    'Diary locked'
   end
 
   def add_entry(header, body)
@@ -27,7 +18,7 @@ class SecretDiary
 
   private
   def locked?
-    @locked
+    @lock_type.locked_state
   end
 
 end

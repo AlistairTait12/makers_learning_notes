@@ -1,9 +1,10 @@
 class DiaryLock
+  attr_reader :locked_state
   def initialize
     @locked_state = true
   end
 
-  def lock
-    @locked_state ? false : true
+  def change_state
+    @locked_state ? @locked_state = false : @locked_state = true
   end
 end
