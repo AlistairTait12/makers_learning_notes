@@ -1,6 +1,6 @@
 class SecretDiary
   def initialize
-    @locked = true
+    @locked = DiaryLock.new
     @entries = []
   end
 
