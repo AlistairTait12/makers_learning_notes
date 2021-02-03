@@ -19,6 +19,9 @@
 * Extract Variable, Extract Method, Extract Class techniques
 * SOLID Principles
 
+### Abstraction
+**Abstraction** is a characteristic of OOP that represents how 
+
 ### Inheritance
 **Inheritance** is the ability to pass on state and behaviour from one 'parent' class to a 'child' class. We may have a class like so:
 ```ruby
