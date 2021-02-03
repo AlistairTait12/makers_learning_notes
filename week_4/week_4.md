@@ -20,8 +20,34 @@
 * SOLID Principles
 
 ### Abstraction
-**Abstraction** is a characteristic of OOP that represents how 
+**Abstraction** is a characteristic of OOP that represents how parts of a codebase can be used and reused without the need to know what is going on _internally_. You may call `.breathe` on an `Animal` object and there may be some complicated processes going on within the object such as `.diaphragm_up`, `.diaphragm_down`, `.expand_lungs` and so on, but at a higher (more abstract) level, the developer may only need to know that an `Animal` can `.breathe` and it will work just fine. Another aspect of Abstraction is the collapsing of a few related methods into one method. Perhaps you have a `Bank_Account` class with `deposit` and `withdraw` methods:
+```ruby
+class Bank_Account
+  def initialize
+    @balance = 0
+  end
 
+  def deposit(amount)
+    @balance += amount
+  end  
+
+  def withdraw(amount)
+    @balance -= amount
+  end
+```
+
+The `deposit` and `withdraw` methods could be replaced with a single `amend`:
+```ruby
+class Bank_Account
+  # omitted initialize
+  def amend(amount)
+    @balance += amount
+  end
+end
+```
+
+the method can now be used as so: `account.amend(50)` or `account.amend(-50)`. The idea here is that a user interface can control the deposit/ withdraw functions and `Bank_Account` only needs to worry about `amend`ing the amount.
+  
 ### Inheritance
 **Inheritance** is the ability to pass on state and behaviour from one 'parent' class to a 'child' class. We may have a class like so:
 ```ruby
