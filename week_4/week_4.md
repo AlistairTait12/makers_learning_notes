@@ -47,7 +47,7 @@ class Cat < Animal
 end
 
 monty = Cat.new("Monty")
-mony.eat("Kitty Kibble") # => Monty is eating Kitty Kibble
+monty.eat("Kitty Kibble") # => Monty is eating Kitty Kibble
 ```
 
 The benefit of Inheritance is that it helps greatly with the **reusability** of your code. You may recall that you had a great class before somewhere but now you want to extend upon it. You would simply need to inherit from that class to reuse it and build upon it.
