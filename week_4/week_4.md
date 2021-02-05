@@ -10,14 +10,14 @@
 ## Explain Some basic OO principles and tie them to high level concerns
 ### Talk about:
 * 4 Pillars of OOP (APIE)
-    * Abstraction
-    * Polymorphism
-    * Inheritance
-    * Encapsulation
+    * **Encapsulation**
+    * **Abstraction**
+    * **Inheritance**
+    * Polymorphism (I am still not so confident on this topic)
+* Single Responsibility Principle (Part of the SOLID principles)
+* Extract Variable, Extract Method, Extract Class techniques
 * Cohesion and Coupling
 * Forwarding
-* Extract Variable, Extract Method, Extract Class techniques
-* SOLID Principles
 
 ### Encapsulation
 Before talking about OOP and Encapsulation, let's talk about _procedural programming_. Having come through the first and second weeks of the bootcamp, and now starting to talk about OOP in-depth, I realise that I was only loosely applying aspects of OOP to my code during these preliminary weeks. Procedural programming is an old style of programming where variables and functions are separated out across the code and those variables and functions can work together to provide output. Procedural programming is acceptable for small scale applications with a clear start and finish (such as the Crocodile River game in the mastery quizzes). One such drawback of this can be that as the codebase becomes more complex, confusion can arise as to the relationships between these data and functions. As a result, code can become difficult to change as making a change in once place lead to needing to make a change elsewhere. Data and functions can become heavily dependent on each other and this can lead to spaghetti code.
@@ -84,4 +84,6 @@ monty = Cat.new("Monty")
 monty.eat("Kitty Kibble") # => Monty is eating Kitty Kibble
 ```
 
-The benefit of Inheritance is that it helps greatly with the **reusability** of your code. You may recall that you had a great class before somewhere but now you want to extend upon it. You would simply need to inherit from that class to reuse it and build upon it.
+A benefit of Inheritance is that it helps greatly with the **reusability** of your code. You may recall that you had a great class before somewhere but now you want to extend upon it. You would simply need to inherit from that class to reuse it and build upon it.
+  
+### Single Responsibility Principle (SRP)
