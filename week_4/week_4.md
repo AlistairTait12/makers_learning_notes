@@ -84,6 +84,14 @@ monty = Cat.new("Monty")
 monty.eat("Kitty Kibble") # => Monty is eating Kitty Kibble
 ```
 
-A benefit of Inheritance is that it helps greatly with the **reusability** of your code. You may recall that you had a great class before somewhere but now you want to extend upon it. You would simply need to inherit from that class to reuse it and build upon it.
+A benefit of Inheritance is that it helps greatly with the **reusability** of your code. You may have written a useful class somewhere, and now you can extend upon it by inheriting its state and behavior. 
   
 ### Single Responsibility Principle (SRP)
+SRP is one of the SOLID principles and asserts that chunks of code should serve one purpose and serve it well. Classes _especially_ should follow the SRP. For example, a `BankAccount` class could have methods that both allow the balance to be viewed and altered. However, these should belong to separate classes so that changing one feature has minimal effect on other features. Sandi Metz, author of _Practical Object Oriented Design in Ruby_ gives excellent advice on determining whether your class currently adheres to the SRP:
+
+> "Another way to home in on what a class is actually doing is to 
+> attempt to describe it in one sentence"
+> \- Sandi Metz, _Practical Object Oriented Design in Ruby - 2nd 
+> Edition_ (for Kindle), p22
+
+If you find yourself using words like 'and' or 'or', then your class (or method) may be taking on too much responsibility. Classes or methods like this should be divided into separate classes with names that reflect what they are doing more accurately. Using the Extract Variable, Extract Method and Extract Class methods, you can divide responsibility across your code effectively. SRP, like Inheritance makes your code highly reusable because you can take a class or method from one codebase without worrying about it being too (if at all) interdependent on the codebase you copied it from. Following SRP also makes your code easy to change. Changing methods and classes that have multiple responsibilities is difficult because making a change to it can impact upon more than one feature. Therefore, changing code in one place may lead to the need to change it in another, then another and so on.
