@@ -1,4 +1,4 @@
-# Week 3
+# Week 3 - TDD
 ## Learning Outcomes:
 (According to the makers apprentice repo)
 - [x] Gather evidence and use reflection to choose goals and track their progress
