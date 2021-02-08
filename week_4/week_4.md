@@ -7,17 +7,20 @@
 ## Other points of interest this week
 - [ ] Pair programming on Oystercard challenge
 
+## Code Review
+Code reviews are the process of developers looking at other developers' code
+
 ## Explain Some basic OO principles and tie them to high level concerns
 ### Talk about:
-* 4 Pillars of OOP (APIE)
+- [x] 4 Pillars of OOP (APIE)
     * **Encapsulation**
     * **Abstraction**
     * **Inheritance**
     * Polymorphism (I am still not so confident on this topic)
-* Single Responsibility Principle (Part of the SOLID principles)
-* Extract Variable, Extract Method, Extract Class techniques
-* Cohesion and Coupling
-* Forwarding
+- [x] Single Responsibility Principle (Part of the SOLID principles)
+- [x] Extract Variable, Extract Method, Extract Class techniques
+- [ ] Cohesion and Coupling
+- [ ] Forwarding
 
 ### Encapsulation
 Before talking about OOP and Encapsulation, let's talk about _procedural programming_. Having come through the first and second weeks of the bootcamp, and now starting to talk about OOP in-depth, I realise that I was only loosely applying aspects of OOP to my code during these preliminary weeks. Procedural programming is an old style of programming where variables and functions are separated out across the code and those variables and functions can work together to provide output. Procedural programming is acceptable for small scale applications with a clear start and finish (such as the Crocodile River game in the mastery quizzes). One such drawback of this can be that as the codebase becomes more complex, confusion can arise as to the relationships between these data and functions. As a result, code can become difficult to change as making a change in once place lead to needing to make a change elsewhere. Data and functions can become heavily dependent on each other and this can lead to spaghetti code.
