@@ -8,7 +8,7 @@
 - [ ] Pair programming on Oystercard challenge
 
 ## Code Review
-Code reviews are the process of developers looking at other developers' code
+Code reviews are the process of developers looking at other developers' code. TL;DR, code reviews help developers because they can learn from both giving and receiving feedback.
 
 ## Explain Some basic OO principles and tie them to high level concerns
 ### Talk about:
@@ -98,3 +98,6 @@ SRP is one of the SOLID principles and asserts that chunks of code should serve 
 > Edition_ (for Kindle), p22
 
 If you find yourself using words like 'and' or 'or', then your class (or method) may be taking on too much responsibility. Classes or methods like this should be divided into separate classes with names that reflect what they are doing more accurately. Using the Extract Variable, Extract Method and Extract Class methods, you can divide responsibility across your code effectively. SRP, like Inheritance makes your code highly reusable because you can take a class or method from one codebase without worrying about it being too (if at all) interdependent on the codebase you copied it from. Following SRP also makes your code easy to change. Changing methods and classes that have multiple responsibilities is difficult because making a change to it can impact upon more than one feature. Therefore, changing code in one place may lead to the need to change it in another, then another and so on.
+
+## Oystercard Challenge
+The Oystercard Challenge was a great exercise in learning how to separate classes. (Note: I ended up breaking all my tests by trying to move the journey logging functionality from `Oystercard` to another `Journey` class, so this is something I will need to revisit). 

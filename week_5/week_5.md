@@ -1,4 +1,6 @@
 # Week 5 - The Web
+> I'll be riding shotgun into battle on a Capybara listening to Sinatra  
+  
 ## Learning Objectives
 ### Write feature tests using Capybara
 > ---**Gemfile Creation**---  
