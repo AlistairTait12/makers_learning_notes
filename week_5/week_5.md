@@ -23,15 +23,17 @@ More **Capybara**: Writing tests in Capybara usually follows a set process:
 2. What does the user expect to see?
   
 ### Test-drive a simple Sinatra app  
-Part of this week was using Capybara to test drive a web application created with Sinatra, a library for creating web applications with HTML and Ruby. The first application I made with this was a 
+Part of this week was using Capybara to test drive a web application created with Sinatra, a library for creating web applications with HTML and Ruby. The first application I made with this was a silly application where you could fill in a form to name a cat and it would name the cat on the next webpage. Silly as it was, I found a few interesting concepts:
+- Sinatra delivers content by defining 'routes' which navigate the user to different webpages or actions based on get/post (and possibly other) requests
+- 
 
 ### Follow an effective process to debug web applications  
 > GET VISIBILITY --- TIGHTEN THE LOOP  
   
-
+Now, not only are bugs located within the file which they occur, but a bug can happen anywhere in the application because of a linked file. For example, something might be broken in your app.rb, but it could be because of something in your classes. The challenge now is chasing a bug across multiple files. What can be a solution to this? GET VISIBILITY, TIGHTEN THE LOOP.
 
 ### Explain and diagram the HTTP request/response cycle  
-  
+
 
 ### Explain and diagram the MVC pattern  
 **Applying this to my message board exercise in week 6**
