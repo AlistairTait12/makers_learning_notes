@@ -78,3 +78,4 @@ From the pairing challenge walkthroughs:
 > If you ever use a global variable in a hiring tech test, you will instantly fail. Don't do it.  
 
 D.U.G. _Don't Use Global_
+###### Just don't
