@@ -24,9 +24,28 @@ More **Capybara**: Writing tests in Capybara usually follows a set process:
   
 ### Test-drive a simple Sinatra app  
 Part of this week was using Capybara to test drive a web application created with Sinatra, a library for creating web applications with HTML and Ruby. The first application I made with this was a silly application where you could fill in a form to name a cat and it would name the cat on the next webpage. Silly as it was, I found a few interesting concepts:
-- Sinatra delivers content by defining 'routes' which navigate the user to different webpages or actions based on get/post (and possibly other) requests
-- 
-
+- Sinatra delivers content by defining 'routes' which navigate the user to different webpages or actions based on get/post (and possibly other) requests.
+- You can test a sinatra app in a few ways
+  - Feature tests in Capybara: giving commands to navigate the application such as `visit(/somepage)` or `click_button "Submit"` and expecting `page` to have content. I.e.:
+```ruby
+feature 'greeting' do
+  scenario 'user visits homepage and expects to see greeting' do
+    visit('/')
+    expect(page).to have_content "Hello, World!"
+  end
+end
+```
+  - Unit tests: written in regular RSpec, they are isolated tests regarding the functionality of your Classes and are supposed to test how well your classes work in isolation. For example:
+```ruby
+describe SomeClass do
+  describe '#a_method' do
+    it "returns 'true' because it does something" do
+      expect(subject.a_method).to eq true
+    end
+  end
+end
+```
+  
 ### Follow an effective process to debug web applications  
 > GET VISIBILITY --- TIGHTEN THE LOOP  
   
@@ -43,7 +62,13 @@ Now, not only are bugs located within the file which they occur, but a bug can h
 |   1   |  visit '/' >   | GET '/', return :index |                         |                                |
 |       |                |                        |                         |                                |
 |   2   | fill in form > |   POST '/message' >    | map message to object > | render :index with new message |
-|  ...  | views messages |     < redirect '/'     |           <--           |   < Send back to controller    |
+|  ...  | views messages |     < redirect '/'     |           <--           |   < Send back to controller    |  
+
+The MVC pattern is an _extremely_ useful method for designing a web application. Parts of your code are split across:
+- **M**odel - The _logic_ behind your application. Classes, methods, modules etc
+- **V**iew - How the application _looks_. Webpage layouts, HTML, CSS etc
+- **C**ontroller - The medium within which the different parts of the app are brought together. Definitions of HTTP routes, passing params between pages etc.
+This is called _Separation of Concerns_
 
 ## Pair Programming Challenges  
 
