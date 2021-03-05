@@ -52,17 +52,40 @@ end
 Now, not only are bugs located within the file which they occur, but a bug can happen anywhere in the application because of a linked file. For example, something might be broken in your app.rb, but it could be because of something in your classes. The challenge now is chasing a bug across multiple files. What can be a solution to this? GET VISIBILITY, TIGHTEN THE LOOP.
 
 ### Explain and diagram the HTTP request/response cycle  
+HTTP requests and responses are how a sever and client interact with each other. There are different types of requests. 
+- GET
+- POST
+- PATCH
+- And others
 
+Doing certain actions in the browser, i.e. clicking on a link (GET), filling in and 'submitting' a form (POST) sends a request to the server which serves different information (response) depending on the request that has been sent. The server will have a defined list of 'routes' that read the request and have a defined response within that route. Here is a small example controller in a Sinatra app:
+
+```ruby
+require 'sinatra'
+
+get '/' do
+  erb(:index)
+end
+
+get '/sign-up' do
+  erb(:sign_up)
+end
+
+post '/sign_up' do
+  # logic to sign up the user handled by the 'model'
+  redirect '/'
+end
+```
 
 ### Explain and diagram the MVC pattern  
 **Applying this to my message board exercise in week 6**
 
-| Step  |     Client     |       Controller       |          Model          |              View              |
+| Step  |     Client     |       Controller       |         Models          |             Views              |
 | :---: | :------------: | :--------------------: | :---------------------: | :----------------------------: |
 |   1   |  visit '/' >   | GET '/', return :index |                         |                                |
 |       |                |                        |                         |                                |
 |   2   | fill in form > |   POST '/message' >    | map message to object > | render :index with new message |
-|  ...  | views messages |     < redirect '/'     |           <--           |   < Send back to controller    |  
+|  ...  | views messages |     < redirect '/'     |           <--           |   < Send back to controller    |
 
 The MVC pattern is an _extremely_ useful method for designing a web application. Parts of your code are split across:
 - **M**odel - The _logic_ behind your application. Classes, methods, modules etc
@@ -70,8 +93,8 @@ The MVC pattern is an _extremely_ useful method for designing a web application.
 - **C**ontroller - The medium within which the different parts of the app are brought together. Definitions of HTTP routes, passing params between pages etc.
 This is called _Separation of Concerns_
 
-## Pair Programming Challenges  
-
+## Pair Programming Challenges - Intro to the Web and 'Battle'
+The Pair programming challenge was pretty tough this week. Learning something new and also trying to incorporate that learning into a project was difficult. _Intro to the Web_ was a series of tutorials explaining how Sinatra works and also how to write feature tests with an extremely useful extension to RSpec called '**Capybara**'. Capybara allows developers to simulate user interaction with a webapp and expect the various pages on that webapp to produce certain results. Sinatra is a framework for creating webapps with ruby and erb (embedded ruby) on top of the usual HTML and CSS. 
 
 ## General advice taken from this week
 From the pairing challenge walkthroughs:
