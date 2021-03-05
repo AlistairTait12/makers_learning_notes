@@ -1,6 +1,6 @@
 # Better?
 - Not enough planning?
-  - Even though it felt like we did
+  - Even though it felt like we did loads
   - More time planning may have resulted in better end result?
   - Didn't use story points
 - Not enough use of resources?
@@ -12,3 +12,4 @@
 # Well?
 - Learned activerecord
 - Learned about branches, pull requests and a strategy to safely merge our branches to a 'pre main' branch to avoid breaking the main branch
+- Resolving merge conflicts
