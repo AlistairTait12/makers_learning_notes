@@ -26,3 +26,17 @@
 - Catching of errors earlier
 - Performance optimisation
 - You are specifically stating which value type you expect so that other devs working on your project don't have to guess this (makes variable naming less ambiguous?)
+
+## Some of the feature requests for acebook:
+### Posts can have new lines in them
+- Storing the newline character in the `content` field of the post object/ db record
+- Alternatively, the `<br>` element in html?
+
+### Posts show the date they were posted
+- Need to store the date in the database
+- Then get it out of the database to use in an object
+
+### Posts appear with the newest post first
+- Again, need to get the date field out of the database record. 
+- Should react somehow use this to render the posts?
+- What handles the logic for the order in which react renders things on the page? Is it react doing this, or should the order in which react receives items be controlled in some way?
